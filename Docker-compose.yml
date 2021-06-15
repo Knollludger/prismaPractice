@@ -1,0 +1,15 @@
+services:
+    web:
+      build: ./frontend
+      ports:
+        - "3000:3000"
+    db:
+      build: ./database
+      ports:
+        - "433:433"
+      environment: 
+        MYSQL_ROOT_PASSWORD: "shockrocklock78"
+    backend:
+      build: ./backend
+      ports:
+        - "1433:1433"
