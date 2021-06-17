@@ -1,3 +1,6 @@
 FROM node:current-alpine3.12
-RUN npm init -y
-RUN yarn add prisma
+COPY /my-app/ /my-app/
+WORKDIR /my-app/
+RUN ls
+RUN yarn update
+CMD yarn start
