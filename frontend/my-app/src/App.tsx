@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <ReviewPage id={10}/>
+        <ReviewPage id={10} title={"Porter Robinson - Nurture"}/>
       </header>
     </div>
   );
