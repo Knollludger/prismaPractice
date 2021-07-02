@@ -1,5 +1,5 @@
 import React from 'react';
-
+import './reviewCard.scss';
 interface reviewProps {
     id:number;
     title: string;
@@ -11,7 +11,6 @@ const ReviewPage = (props:reviewProps): React.ReactElement<reviewProps> => {
             <h3>{props.title}</h3>
         </div>
     )
-
 
     return (
         <div>
